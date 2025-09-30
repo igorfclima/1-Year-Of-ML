@@ -23,6 +23,12 @@ def array_operations():
     print("Array from 1 to 100 with step 5:")
     print(array)
 
+    print("Array statistics:")
+    print("Shape: ", array.shape) #tamanho do array
+    print("Type: ", array.dtype) #tipo do array
+    print("Size: ", array.size) #quantidade de elementos
+    print("Dimensions: ", array.ndim) #dimensao do array
+
 def main():
     array_operations()
 
