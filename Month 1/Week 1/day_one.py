@@ -11,6 +11,13 @@ def array_operations():
     print("2D Array:")
     print(arr_2d)
 
+    np.zeros((3,3))
+    np.ones((2,4))
+    print("Array of zeros (3x3):")
+    print(np.zeros((3,3)))# 3 por 3
+    print("Array of ones (2x4):")
+    print(np.ones((2,4)))# 2 por 4
+
 def main():
     array_operations()
 
