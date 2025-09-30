@@ -18,6 +18,11 @@ def array_operations():
     print("Array of ones (2x4):")
     print(np.ones((2,4)))# 2 por 4
 
+    #array de 1 a 100 com passo 5
+    array = np.arange(1, 101, 5)
+    print("Array from 1 to 100 with step 5:")
+    print(array)
+
 def main():
     array_operations()
 
