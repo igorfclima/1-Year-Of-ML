@@ -47,6 +47,18 @@ def slicing_example():
     matriz = M[0:2, 2:4]
     print(matriz)
 
+    print("First row:")
+    matriz = M[0:1,]
+    print(matriz)
+
+    print("Second row:")
+    matriz = M[1:2,]
+    print(matriz)
+
+    print("Last row:")
+    matriz = M[2:3,]
+    print(matriz)
+
 def main():
     array_operations()
     slicing_example()
