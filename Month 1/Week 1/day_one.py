@@ -29,8 +29,27 @@ def array_operations():
     print("Size: ", array.size) #quantidade de elementos
     print("Dimensions: ", array.ndim) #dimensao do array
 
+def slicing_example():
+    M = np.array([
+        [1, 2, 3, 4],
+        [5, 6, 7, 8],
+        [9, 10, 11, 12]
+    ])
+    print("Original Array:")
+    print(M)
+
+    print("Slicing Examples:")
+    print("First two rows and first two columns:")
+    matriz = M[0:2, 0:2]
+    print(matriz)
+
+    print("First two rows and last two columns:")
+    matriz = M[0:2, 2:4]
+    print(matriz)
+
 def main():
     array_operations()
+    slicing_example()
 
 if __name__ == "__main__":
     main()
