@@ -1,4 +1,5 @@
 import numpy as np
+import random as rd
 
 def array_operations():
     # 1D array
@@ -59,9 +60,19 @@ def slicing_example():
     matriz = M[2:3,]
     print(matriz)
 
+
+def rand_tests():
+    print("Random Array:", rd.random())
+    rand_array = np.array([rd.randint(1, 100) for _ in range(20)])
+    print("Random Array:", rand_array)
+
+    filtered_array = rand_array > 50
+    print("Filtered Array (values > 50):", rand_array[filtered_array])
+
 def main():
     array_operations()
     slicing_example()
+    rand_tests()
 
 if __name__ == "__main__":
     main()
