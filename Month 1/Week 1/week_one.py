@@ -62,12 +62,20 @@ def slicing_example():
 
 
 def rand_tests():
-    print("Random Array:", rd.random())
     rand_array = np.array([rd.randint(1, 100) for _ in range(20)])
     print("Random Array:", rand_array)
 
     filtered_array = rand_array > 50
     print("Filtered Array (values > 50):", rand_array[filtered_array])
+
+    rand_array = np.array([rd.randint(1, 100) for _ in range(20)])
+    print("First Random Array:", rand_array)
+
+    second_array = np.array([rd.randint(1, 100) for _ in range(20)])
+    print("Second Random Array:", second_array)
+
+    sum_array = np.add(rand_array, second_array)
+    print("Sum of both arrays:", sum_array)
 
 def main():
     array_operations()
