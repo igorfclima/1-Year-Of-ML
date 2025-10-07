@@ -17,3 +17,11 @@ def calc_averages(notes):
     for student in notes:
         avgs.append(np.mean(student))
     return np.array(avgs)
+
+def calc_test_average(notes: np.array):
+    avgs = []
+    num_colunas = notes.shape[1]
+    for i in range(num_colunas):
+        row = np.array(notes[:i])
+        avgs.append(np.mean(row))
+    return np.array(avgs)
