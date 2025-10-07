@@ -10,3 +10,10 @@ def random_notes():
                      student_two,
                      student_three,
                      student_four])
+
+
+def calc_averages(notes):
+    avgs = []
+    for student in notes:
+        avgs.append(np.mean(student))
+    return np.array(avgs)
